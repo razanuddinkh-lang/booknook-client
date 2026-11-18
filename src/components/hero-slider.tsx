@@ -32,7 +32,7 @@ export default function HeroSlider() {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="hero-bottom-note"><span>01 — 03</span><span className="h-px w-12 bg-white/40" /><span>Curated for curious minds</span></div>
+      <div className="hero-bottom-note"><span>01 — 03</span><span className="h-px w-12 bg-white/50" /><span>Curated for curious minds</span></div>
     </section>
   );
 }
