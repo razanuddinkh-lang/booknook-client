@@ -16,7 +16,7 @@ const slides = [
 export default function HeroSlider() {
   return (
     <section className="hero-frame relative overflow-hidden">
-      <Swiper modules={[Autoplay, EffectFade, Pagination]} effect="fade" loop autoplay={{ delay: 5200, disableOnInteraction: false }} pagination={{ clickable: true }} className="h-full">
+      <Swiper modules={[Autoplay, EffectFade, Pagination]} effect="fade" loop autoplay={{ delay: 4200, disableOnInteraction: false }} pagination={{ clickable: true }} className="h-full">
         {slides.map((slide) => (
           <SwiperSlide key={slide.title}>
             <div className="hero-slide" style={{ backgroundImage: `linear-gradient(90deg, ${slide.tone}F2 0%, ${slide.tone}C9 44%, ${slide.tone}28 100%), url(${slide.image})` }}>
