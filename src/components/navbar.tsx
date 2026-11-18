@@ -87,7 +87,7 @@ export default function Navbar() {
         </div>
       </div>
       {mobileOpen && (
-        <div className="border-t-2 border-base-300 bg-base-100 px-4 py-3 lg:hidden">
+        <div className="border-t-2 border-base-400 bg-base-100 px-4 py-3 lg:hidden">
           <nav className="page-shell flex flex-col gap-1">
             {links.map((link) => <Link key={link.href} href={link.href} onClick={() => setMobileOpen(false)} className="rounded-xl px-3 py-2.5 text-sm font-semibold hover:bg-base-200">{link.label}</Link>)}
             {!session && <div className="mt-2 grid grid-cols-2 gap-2"><Link href="/login" className="btn btn-outline btn-sm">Login</Link><Link href="/register" className="btn btn-primary btn-sm">Register</Link></div>}
